@@ -14,6 +14,7 @@ function App() {
   const [cards, setCards] = useState([]);
   const [turns, setTurns] = useState(0);
 
+  // shuffling Cards Function
   const shuffleCards = () => {
     const shuffledCards = [...cardImages, ...cardImages]
       .sort(() => Math.random() - 0.5)
